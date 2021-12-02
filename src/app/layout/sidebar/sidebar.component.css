@@ -1,0 +1,101 @@
+.side-logo{
+  padding: 20px 35px 50px 40px;
+}
+.sidebar{
+  position: relative;
+  height: 100%;
+  width: 300px;
+
+}
+
+.sidebar ul{
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  list-style-type: none;
+  padding: 10px 20px 0  20px;
+  transition: all .1s linear;
+
+}
+.sidebar ul li{
+  padding: 0 15px;
+  margin-top: 10px;
+
+}
+.sidebar ul li:first-child{
+  margin-top: 0px;
+
+}
+.sidebar ul li a{
+  padding: 12px 20px;
+  display: block;
+  font-size: 16px; 
+  font-weight: 600;
+  color: #808080;    
+
+}
+.sidebar ul li a:hover{
+  background-color: #fff;
+  color: #F36F22;   
+  text-decoration: none;
+  box-shadow: 0px 10px 10px #00000008;
+  border-radius: 7px;
+
+}
+.sidebar ul li a.active{
+  background-color: #fff;
+  border-radius: 7px;
+  color: #F36F22;   
+  box-shadow: 0px 10px 10px #00000008;
+
+
+}
+.sidebar ul li a i{
+  margin-right: 20px;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+}
+
+.sidebar ul li a i .img2{
+  display: none;
+}
+.sidebar ul li a:hover i .img1{
+  display: none;   
+}
+.sidebar ul li a:hover i .img2{
+  display: inline-block;
+}
+.sidebar ul li a.active i .img1{
+  display: none;   
+}
+.sidebar ul li a.active i .img2{
+  display: inline-block;
+}
+
+.sidebar:hover ul li a{
+   text-align: left;
+
+}
+
+.bottom-text{
+  padding: 20px 35px 20px 40px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #7C7C7C;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 992px){
+  .sidebar{
+    position: absolute;
+    left: 0;
+    background: white;
+    z-index: 1111;
+    top: 0;
+  }
+  .side-logo{
+    padding: 20px 35px 50px 15px;
+  }
+}

@@ -1,0 +1,49 @@
+<div class="main">
+    <div class="pr-lg-4 pl-lg-5 px-3 pt-lg-2">
+  <div class="d-block d-lg-none fs-22 fw-500 mb-3"> Teachers </div>
+        <div class="fs-16 fw-500 mb-3">Select the teachers below</div>
+        <div class="top-bar">
+            <div class="form-row">
+                <div class="col-md-8">
+                    <div class="search-with-btn">
+                        <input type="text" name="" id="" placeholder="Search by teacher’s name">
+                        <a href="javascript:void(0)" class="search-btn">Search</a>
+                    </div>
+                </div>
+                <div class="col-md-4 position-relative">
+                    <img src="assets/images/girl.png" class="image1" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row my-4 justify-content-center">
+            <div class="col-md-2 mb-3 mb-lg-0">
+                <ng-select [items]="grade" [clearable]="false" [searchable]="false" class="select-2 w-100" placeholder="Grade" bindLabel="name" bindValue="id">
+                </ng-select>
+            </div>
+            <div class="col-md-2 mb-3 mb-lg-0">
+                <ng-select [items]="subject" [clearable]="false" [searchable]="false" class="select-2 w-100" placeholder="Subject" bindLabel="name" bindValue="id">
+                </ng-select>
+            </div>
+            <div class="col-md-2 mb-3 mb-lg-0">
+                <ng-select [items]="medium" [clearable]="false" [searchable]="false" class="select-2 w-100" placeholder="Medium" bindLabel="name" bindValue="id">
+                </ng-select>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-6 px-2 px-lg-3" *ngFor="let t of teacher">
+                <div class="teacher-card text-center">
+                    <div class="top-head"></div>
+                    <div class="main1" routerLink="/detail">
+                        <div class="teacher">
+                            <img src="assets/test-user.png" alt="">
+                        </div>
+                        <div class="fs-16 fw-500 mb-2">{{t.name}}</div>
+                        <div class="badge bg-green">Physics</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

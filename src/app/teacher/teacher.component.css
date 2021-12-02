@@ -1,0 +1,124 @@
+.top-bar{
+    background: transparent radial-gradient(closest-side at 0% 50%, #FFBA8B 0%, #FFDA90 100%) 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    padding: 30px;
+}
+.search-with-btn{
+    position: relative;
+}
+.search-with-btn input{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 10px #00000008;
+    border-radius: 7px;
+    height: 50px;
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 20px;
+}
+.search-with-btn input::placeholder{
+    font-size: 14px;
+    color: #7C7C7C;
+    font-weight: 500;
+}
+.search-with-btn .search-btn{
+    background: #E65500 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 10px #00000008;
+    border-radius: 0px 7px 7px 0px;
+    height: 50px;
+    width: 150px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -69px;
+}
+.teacher-card{
+    box-shadow: 0px 10px 10px #00000014;
+    border-radius: 7px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+.top-head{
+    background: #F2F2F2;
+    border-radius: 7px 7px 0px 0px;
+    height: 110px;
+}
+.main1{
+    position: relative;
+    top: -55px;
+    cursor: pointer;
+}
+.teacher{
+    height: 114px;
+    width: 114px;
+    margin: 0 auto;
+    border-radius: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.teacher img{
+    border-radius: 100px;
+    border: 8px solid white;
+    box-shadow: 0px 10px 10px #00000014;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+
+}
+
+
+::ng-deep .ng-select.ng-select-single .ng-select-container {
+    height: 40px;
+    min-height: 40px;
+    box-shadow: 0px 10px 10px #00000008;
+    border-radius: 5px;
+    border: 0;
+    font-size: 14px;
+}
+::ng-deep .ng-select .ng-arrow-wrapper {
+    width: 40px;
+    padding-right: 5px;
+    height: 40px;
+    background-color: #1954CB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+::ng-deep .ng-select .ng-arrow-wrapper .ng-arrow {
+    border-color: #fff transparent transparent;
+}
+::ng-deep .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected .ng-option-label, .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected.ng-option-marked .ng-option-label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+@media(max-width: 992px){
+    .top-bar{
+        padding: 30px 20px;
+    }
+    .search-btn{
+        width: 75px !important;
+    }
+    .teacher{
+        height: 100px;
+        width: 100px;
+    }
+    .image1{
+        display: none;
+    }
+}

@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "edumix"
+    }
+  },
+  "defaultProject": "edumix",
+  "cli": {
+    "analytics": "6a8bc4ab-7b9b-474b-85c1-268765b23554"
+  }
 }

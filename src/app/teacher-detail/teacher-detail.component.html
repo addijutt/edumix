@@ -1,0 +1,72 @@
+<div class="main">
+    <div class="pr-lg-4 pl-lg-5 px-3 pt-lg-2">
+        <div class="detail-card">
+                <div class="top-head"></div>
+                <div class="main1">
+                    <div class="teacher">
+                        <img src="assets/test-user.png" alt="">
+                    </div>
+                    <div>
+                    <div class="fs-18 fw-500">Charitha Dissanayake</div>
+                    <div class="text-grey fs-12 fw-500 my-1">B.sc. (Engineering) Hons, University of Moratuwa</div>
+                    <div class="fs-14 fw-500">Mobile: 076 5 474 747</div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="pr-lg-4 pl-lg-5 px-0">
+
+        <div class="select-banner mb-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-row align-items-md-center">
+                        <div class="col-4">
+                            <ng-select [items]="grade" [clearable]="false" [searchable]="false" class="select-2 w-100" placeholder="Grade" bindLabel="name" bindValue="id">
+                            </ng-select>
+                        </div>
+                        <div class="col-8">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <div class="form-check-1 mr-lg-4 mr-1">
+                                    <input type="checkbox" class="styled-checkbox" id="0">
+                                    <label for="0" class="form-check-label"> Classes</label>
+                                </div>
+                                <div class="form-check-1">
+                                    <input type="checkbox" class="styled-checkbox" id="1">
+                                    <label for="1" class="form-check-label"> Study packs</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pr-lg-4 pl-lg-5 px-3">
+    
+
+        <div class="row">
+            <div class="col-md-6" *ngFor="let d of detail">
+                <div class="card-xs">
+                    <div class="media">
+                        <div class="media-img">
+                            <img src="assets/images/2.svg" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="d-flex justify-content-between">
+                                <div class="detail">
+                                    <div class="fs-16 fw-500">{{d.name}}</div>
+                                    <div class="fs-14 fw-500 text-orange">2500 LKR</div>
+                                </div>
+                            </div>
+                            <div class="text-left">
+                                <div class="badge bg-orange mr-2">Chemistry</div>
+                                <span class="badge bg-blue mr-2">Nugegoda</span>
+                                <span class="badge bg-blue">2021 A/L</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

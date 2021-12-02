@@ -1,0 +1,117 @@
+
+.card-into{
+    background: transparent radial-gradient(closest-side at 0% 0%, #709BF0 0%, #81A7F2 100%) 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    padding: 30px;
+    height: 200px;
+}
+
+.card-into .text-side h2{
+    text-align: left;
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    font-weight: 500 !important;
+}
+.card-into .text-side p{
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+.btn{
+    background: #1954CB 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 10px #3564c1;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    padding: 8px 20px;
+}
+
+
+.card-class{
+    background: transparent radial-gradient(closest-side at 3% 4%, #81F2B5 0%, #5DD695 100%) 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    padding: 25px 30px;
+    height: 200px;
+}
+
+.card-class .text-side p{
+    letter-spacing: 0px;
+    color: #3B3B3B;
+    font-size: 16px;
+}
+.card-class .text-side h4{
+    color: #1954CB;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 0;
+
+}
+.card-class .text-side span{
+    color: #1954CB;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card-xs{
+    box-shadow: 0px 10px 10px #00000014;
+    padding: 12px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+.media-img{
+    background-color: #F2F2F2;
+    /* height: 70px; */
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    border-radius: 7px;
+}
+.media-img img{
+    height: 50px;
+    width: 100%;
+    object-fit: contain;
+}
+.media-img1{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 15px;
+    border-radius: 7px;
+}
+
+.media{
+    align-items: inherit;
+}
+
+.empty .find, .empty .notify{
+    display: none;
+}
+
+.noti-img{
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.noti-img img{
+    height: 50px;
+}
+@media (max-width: 992px){
+    .image-side{
+        display: none;
+    }
+}
