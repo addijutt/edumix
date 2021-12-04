@@ -32,15 +32,15 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-4 col-6 px-2 px-lg-3" *ngFor="let t of teacher">
+            <div class="col-lg-4 col-6 px-2 px-lg-3" *ngFor="let t of teacher, let i = index">
                 <div class="teacher-card text-center">
                     <div class="top-head"></div>
                     <div class="main1" routerLink="/detail">
                         <div class="teacher">
-                            <img src="assets/test-user.png" alt="">
+                            <img [src]="t.imgUrl" alt="">
                         </div>
                         <div class="fs-16 fw-500 mb-2">{{t.name}}</div>
-                        <div class="badge bg-green">Physics</div>
+                        <div class="badge bg-green" [class.bg-blue]='selectedIndex === i'>Physics</div>
                     </div>
                 </div>
             </div>

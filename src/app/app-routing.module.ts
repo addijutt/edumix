@@ -8,10 +8,11 @@ import { TeacherComponent } from './teacher/teacher.component';
 
 const routes: Routes = [
   {  path: '', component: LayoutComponent, children:[
-    { path: '', component: DashboardComponent },
+    { path: 'dashboard', component: DashboardComponent },
     { path: 'teacher', component: TeacherComponent },
     { path: 'detail', component: TeacherDetailComponent },
     { path: 'payment', component: PaymentComponent },
+    {path: '', redirectTo: '/dashboard', pathMatch: 'full'}
   ] },
 ];
 

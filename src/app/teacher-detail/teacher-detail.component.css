@@ -6,6 +6,7 @@
 .top-head img{
     height: 100%;
     width: 100%;
+    border-radius: 15px;
     object-fit: fill;
 }
 .main1{
@@ -120,5 +121,8 @@
     .teacher{
         margin: 0 auto;
         margin-bottom: 20px;
+    }
+    .top-head img{
+        object-fit: cover;
     }
 }

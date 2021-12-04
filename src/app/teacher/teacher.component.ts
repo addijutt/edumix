@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeacherComponent implements OnInit {
 
+  public selectedIndex: number;
+  
+
   grade = [
     { id: 1, name: 'Grade Here' },
     { id: 2, name: 'Grade Here' },
@@ -27,20 +30,24 @@ medium = [
   { id: 4, name: 'Medium Here' },
 ];
   teacher = [
-    {name: "Charitha Dissanayake"},
-    {name: "Charitha Dissanayake"},
-    {name: "Charitha Dissanayake"},
-    {name: "Charitha Dissanayake"},
-    {name: "Charitha Dissanayake"},
-    {name: "Charitha Dissanayake"},
-    {name: "Charitha Dissanayake"},
-    {name: "Charitha Dissanayake"},
+    {name: "Charitha Dissanayake", imgUrl: "assets/images/user1.png"},
+    {name: "Charitha Dissanayake", imgUrl: "assets/images/user2.png"},
+    {name: "Charitha Dissanayake", imgUrl: "assets/images/user1.png"},
+    {name: "Charitha Dissanayake", imgUrl: "assets/images/user2.png"},
+    {name: "Charitha Dissanayake", imgUrl: "assets/images/user1.png"},
+    {name: "Charitha Dissanayake", imgUrl: "assets/images/user1.png"},
+    {name: "Charitha Dissanayake", imgUrl: "assets/images/user1.png"},
+    {name: "Charitha Dissanayake", imgUrl: "assets/images/user1.png"},
 
   ]
 
   constructor() { }
 
   ngOnInit(): void {
+    this.selectedIndex = 0;
+    
   }
+
+ 
 
 }
